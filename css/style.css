@@ -1,0 +1,545 @@
+/*Сброс стилей */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/*Контейнер*/
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/*Стили для шапки*/
+.logo{
+    width: 43px;
+}
+header{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: black;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.header-left{
+    display: flex;
+}
+
+.logo-name{
+    font-size: 34px;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+}
+
+.phone{
+    filter: invert(100%);
+    width: 25px;
+    margin-right: 5px;
+}
+
+.phone-text{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+/*Стили для товаров*/
+.goods{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.goods-input{
+    display: none;
+}
+
+.goods-filter-buttons{
+    display: flex;
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+
+.goods-filter-x{
+ padding: 7px;
+ background-color: #ffd600;
+ color: black;
+ margin-right: 20px;
+ cursor: pointer;
+ border-radius: 7px;
+}
+
+.goods-filter-x:last-child{
+    margin-right: 0;
+}
+
+.goods-filter-x:hover{
+    color: #ffd600;
+    background-color: black;
+    transition: 0.6s;
+}
+.goods-all{
+    display: flex;
+    flex-wrap: wrap;
+}
+.good-x{
+    margin-left: 11px;
+    margin-right: 11px;
+    width: 23%;
+    border: 1px solid #d8d8d8;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.good-up{
+    width: 100%;
+    position: relative;
+}
+.good-down{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.good-img{
+    height: 280px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.good-name{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.good-description{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.good-price{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 47px;        
+}
+
+.good-price-by{
+    position: absolute;
+    bottom: 1%;
+    padding: 4px;
+    border-radius: 2px;
+    background-color: #ffd600;
+    color: black;
+    text-decoration: none;
+}
+
+
+[value="all"]:checked ~ .goods-all [data-category] {
+  display: block;
+}
+
+[value="electro-scooter"]:checked ~ .goods-all .good-x:not([data-category~="electro-scooter"]),
+[value='giro']:checked ~ .goods-all .good-x:not([data-category~="giro"]),
+[value='sigwey']:checked ~ .goods-all .good-x:not([data-category~="sigwey"]){
+    display: none;
+}
+
+[value='electro-scooter']:checked ~ .goods-filter-buttons [for="electro-scooter"],
+[value='all']:checked ~ .goods-filter-buttons [for="all"],
+[value='sigwey']:checked ~ .goods-filter-buttons [for="sigwey"],
+[value='gori']:checked ~ .goods-filter-buttons [for="giro"]{
+    color:#ffd600;
+    background-color: black;
+}
+
+
+
+
+
+/*Стили для брендов*/
+.brands{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #ffd600;
+}
+
+.brands-title{
+    font-size: 27px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.brands-all{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brand-x{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-height: 260px;
+}
+
+.brand-img{
+    width: 200px;
+}
+
+
+
+
+
+
+
+/*Стили для консультантов*/
+.consultants{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
+}
+.consultant-title{
+    font-size: 27px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color:#ffd600;
+}
+.consultant-x{
+    display: flex;
+     justify-content: center;
+     margin-bottom: 30px;
+     align-items: center;
+     border-bottom: 1px solid #1c1c1c;
+}
+.consultant-x:last-child{
+    border-bottom: 0;
+}
+.consultant-x-up{
+    width: 50%;
+}
+.consultant-x-name{
+    color:#ffd600;
+    font-size: 20;
+    font-weight: 500;
+}
+.consultant-x-down{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+    color:#ffd600;
+}
+.consultant-img{
+    width: 100%;
+}
+
+
+
+
+
+
+/*Стили для блока с призывом*/
+.request{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: url("../img/some.jpg");
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.request-title{
+    font-size: 27px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: black;
+    display: none;
+}
+
+.request-text{
+    color: #ffffff;
+    width: 473px;
+    margin-left: 66%;
+    font-size: 22px;
+    margin-top: 300px;
+    font-weight: 500;
+    font-style: italic;
+    background-color: #393939;
+    padding: 5px;
+}
+
+
+
+
+
+
+/*Стили для формы*/
+.form{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.form-title{
+    font-size: 27px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.form-title-2{
+    font-size: 22px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #6a6a6a;
+}
+
+
+
+.form-field{
+    border: 1px solid grey;
+    width: 249px;
+    margin-bottom: 10px;
+    padding: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.form-button{
+    padding: 20px;
+    width: 249px;
+    display: block;
+    margin: 0 auto;
+    color: #ffd600;
+    background-color: black;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 700;
+
+}
+
+
+
+
+/*Стили для футера*/
+footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
+}
+.footer-up{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.footer-down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-some{
+    color: white;
+}
+
+.footer-img{
+    width: 28px;
+}
+
+.footer-img:last-child{
+    margin-left: 5px;
+}
+.footer-img:first-child{
+    margin-right: 5px;
+}
+
+.centr{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+/*Стили для кнопки на вверх*/
+.button-up{
+    bottom: 2%;
+    right: 1%;
+    position: fixed;
+}
+.button-up-b{
+    border-radius: 50%;
+    background-color: transparent;
+    color: #FFEB3B;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid #7e7e7e;
+    font-size: 19px;
+}
+
+
+
+/*Стили для экранов меньше 1350*/
+@media (max-width: 1350px) {
+    .request-text{
+        margin-left: 57%;
+    }
+}
+
+
+
+
+/*Стили для экранов меньше 1200*/
+@media (max-width: 1200px) {
+    .container{
+        max-width: 970px;
+    }
+     
+    .good-x{
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 31%;
+    }
+
+    .request-text{
+        margin-left: 6%;
+    }
+}
+
+
+
+
+/*Стили для экранов меньше 992*/
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .good-x{
+        margin-left: 8px;
+        margin-right: 8px;
+        width: 31%;
+        
+    }
+    .good-img{
+        height: 225px;
+    }
+    .consultant-x-up{
+        width: 40%;
+    }
+    .consultant-x-down{
+        width: 60%;
+    }
+}
+
+
+
+
+/*Стили для экранов меньше 767*/
+@media (max-width: 767px) {
+    .container {
+        max-width: 480px;
+    }
+    .goods-filter-x{
+        padding: 6px;
+        margin-right: 8px;
+    }
+
+    .good-x{
+        margin-left: 8px;
+        margin-right: 8px;
+        width: 100%;
+    }
+    .good-up{
+        width: 79%;
+        margin: 0 auto;
+    }
+    .good-img{
+        height: 304px;
+    }
+    
+    .consultant-x{
+        flex-direction: column;
+        margin-bottom: 65px;
+    }
+    .consultant-x-up{
+        width: 100%;
+    }
+
+    .consultant-x-down{
+        width: 100%;
+    }
+    .request{
+        background-position-x: -272px;
+    }
+}
+
+
+
+/*Стили для экранов меньше 573*/
+@media (max-width: 573px) {
+    .request-text {
+        text-align: center;
+        margin-left: 0;
+        font-size: 18px;
+        width: 100%;
+    }
+}
+
+
+
+
+/*Стили для экранов меньше 400*/
+@media (max-width: 400px) {
+    .container{
+        max-width: none;
+    }
+    
+    .logo-name{
+        font-size: 29px;
+    }
+    .phone{
+        width: 22px;
+    }
+    .phone-text{
+        font-size: 15px;
+    }
+    .brands-title{
+        font-size: 23px;
+    }
+    .brands-all{
+        display: block;
+    }
+    .brand-x{
+        width: 100%;
+        min-height: 208px;
+    }
+    .brand-x:first-child{
+        min-height: 150px;
+    }
+    .goods-filter-x{
+        padding: 3px;
+        margin-right: 4px;
+        font-size: 13px;
+    }
+    .footer-some{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY GIRO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header id="top">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <img src="img/logo2.png" alt="" class="logo">
+                    <div class="logo-name">MyGiro</div>
+                </div>
+                <div class="header-right">
+                    <img src="img/phone.png" alt="Телефон" class="phone">
+                    <a class="phone-text" href="tel:89999999999">8-(999)-999-99-99</a>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </header>
+
+    <div class="main">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" id="slide-1" name="slides" class="input-slider" checked>
+                <div class="slide slide-first">
+                    <div class="slide-title">
+                        Почувствуй себя свободным от пробок
+                    </div>
+                </div>
+                <input type="radio" id="slide-2" name="slides" class="input-slider">
+                <div class="slide slide-second">
+                    <div class="slide-title">Будь быстрым, легким, современным</div>
+                </div>
+                <input type="radio" id="slide-3" name="slides" class="input-slider">
+                <div class="slide slide-third">
+                    <div class="slide-title">Тебе больше не нужен бензин, залезать под копот</div>
+                </div>
+                <input type="radio" id="slide-4" name="slides" class="input-slider">
+                <div class="slide slide-four">
+                    <div class="slide-title">Будущее уже наступило</div>
+                </div>
+            </div>
+            <div class="slides-buttons">
+                <label for="slide-1" class="label-roungle"></label>
+                <label for="slide-2" class="label-roungle"></label>
+                <label for="slide-3" class="label-roungle"></label>
+                <label for="slide-4" class="label-roungle"></label>
+            </div>
+        </div>
+        <!-- /.slider -->
+
+        <div class="goods">
+            <div class="container">
+                <div class="goods-content">
+
+                    <input type="radio" class="goods-input" id="all" name="goods-type" checked value="all">
+                    <input type="radio" class="goods-input" name="goods-type" id="electro-scooter"
+                        value="electro-scooter">
+                    <input type="radio" class="goods-input" name="goods-type" id="sigwey" value="sigwey">
+                    <input type="radio" class="goods-input" name="goods-type" id="giro" value="giro">
+
+
+                    <div class="goods-filter-buttons">
+                        <label for="all" class="goods-filter-x">Все</label>
+                        <label for="electro-scooter" class="goods-filter-x">Электро самокаты</label>
+                        <label for="sigwey" class="goods-filter-x">Сигвеи</label>
+                        <label for="giro" class="goods-filter-x">Гироскутеры</label>
+                    </div>
+                    <!-- /.goods-filter-buttons -->
+                    <div class="goods-all">
+                        <div class="good-x" data-category="electro-scooter">
+                            <div class="good-up">
+                                <div class="good-img"
+                                    style="background: url('\img/scooter.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
+                                </div>
+                            </div>
+                            <div class="good-down">
+                                <div class="good-name">Jilong GX</div>
+                                <div class="good-description">Самый крепкий и яркий электросамокат. Имеет
+                                    гидравлические тормоза.</div>
+                                <div class="good-price">90 000 руб</div>
+                                <a href='#buy' class="good-price-by">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="good-x" data-category="electro-scooter">
+                            <div class="good-up">
+                                <div class="good-img"
+                                    style="background: url('\img/scooter1.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
+                                </div>
+                            </div>
+                            <div class="good-down">
+                                <div class="good-name">Kugoo G1</div>
+                                <div class="good-description">Комфортный широкий руль. Дополнительный порт для
+                                    зарядки.</div>
+                                <div class="good-price">65 000 руб</div>
+                                <a href='#buy' class="good-price-by">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="good-x" data-category="electro-scooter">
+                            <div class="good-up">
+                                <div class="good-img"
+                                    style="background: url('\img/scooter2.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
+                                </div>
+                            </div>
+                            <div class="good-down">
+                                <div class="good-name">Kugoo G2 PRO</div>
+                                <div class="good-description">Рычажная эластомерная подвеска.</div>
+                                <div class="good-price">45 000 руб</div>
+                                <a href='#buy' class="good-price-by">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="good-x" data-category="electro-scooter">
+                            <div class="good-up">
+                                <div class="good-img"
+                                    style="background: url('\img/scooter3.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
+                                </div>
+                            </div>
+                            <div class="good-down">
+                                <div class="good-name">Kugoo X1</div>
+                                <div class="good-description">Электросамокат премиум качества с аккумулятором
+                                    большой ёмкости.</div>
+                                <div class="good-price">40 000 руб</div>
+                                <a href='#buy' class="good-price-by">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="good-x" data-category="sigwey">
+                            <div class="good-up">
+                                <div class="good-img"
+                                    style="background: url('\img/seegway.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
+                                </div>
+                            </div>
+                            <div class="good-down">
+                                <div class="good-name">Ninebot Mini</div>
+                                <div class="good-description">Сегвей со встроенными колонками Bluetooth и
+                                    мощноситью
+                                    двигателя 700 Вт</div>
+                                <div class="good-price">27 000 руб</div>
+                                <a href='#buy' class="good-price-by">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="good-x" data-category="sigwey">
+                            <div class="good-up">
+                                <div class="good-img"
+                                    style="background: url('\img/seegway2.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
+                                </div>
+                            </div>
+                            <div class="good-down">
+                                <div class="good-name">Mini Robot Pro 54V</div>
+                                <div class="good-description">Диаметр колес 10,5 дюймов, высота клиренса – 80
+                                    мм, что
+                                    позволяет передвигаться почти по любым дорогам.</div>
+                                <div class="good-price">24 500 руб</div>
+                                <a href='#buy' class="good-price-by">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="good-x" data-category="sigwey">
+                            <div class="good-up">
+                                <div class="good-img"
+                                    style="background: url('\img/seegway3.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
+                                </div>
+                            </div>
+                            <div class="good-down">
+                                <div class="good-name">Segway S Pro </div>
+                                <div class="good-description">Максимальная скорость 18 км/ч, небольшой размер.
+                                    Все что
+                                    нужно для передвежния по городу.</div>
+                                <div class="good-price">30 000 руб</div>
+                                <a href='#buy' class="good-price-by">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="good-x" data-category="sigwey">
+                            <div class="good-up">
+                                <div class="good-img"
+                                    style="background: url('\img/seegway4.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
+                                </div>
+                            </div>
+                            <div class="good-down">
+                                <div class="good-name">WMOTION Q7</div>
+                                <div class="good-description"> Защита корпуса IP54, а это значит, что
+                                    дождь, снег, грязь и неглубокие лужи не причинят никакого вреда</div>
+                                <div class="good-price">29 000 руб</div>
+                                <a href='#buy' class="good-price-by">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="good-x" data-category="giro">
+                            <div class="good-up">
+                                <div class="good-img"
+                                    style="background: url('\img/giro1.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
+                                </div>
+                            </div>
+                            <div class="good-down">
+                                <div class="good-name">Smart Balance PRO</div>
+                                <div class="good-description">Увеличенная ёмкость аккомулятора, позволяет ездить
+                                    на этом
+                                    гироскутере до 3-х часов</div>
+                                <div class="good-price">12 000 руб</div>
+                                <a href='#buy' class="good-price-by">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="good-x" data-category="giro">
+                            <div class="good-up">
+                                <div class="good-img"
+                                    style="background: url('\img/giro2.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
+                                </div>
+                            </div>
+                            <div class="good-down">
+                                <div class="good-name">Smart Balance Wheel 6.5 APP</div>
+                                <div class="good-description">Дизайн этого гироскутера, поможет вам выделиться
+                                    своим
+                                    стилем на людях.</div>
+                                <div class="good-price">9 000 руб</div>
+                                <a href='#buy' class="good-price-by">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="good-x" data-category="giro">
+                            <div class="good-up">
+                                <div class="good-img"
+                                    style="background: url('\img/giro3.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
+                                </div>
+                            </div>
+                            <div class="good-down">
+                                <div class="good-name">Smart Balance Pro 6.5</div>
+                                <div class="good-description">Стильный дизайн, быстрая зарядка, что еще нужно
+                                    для
+                                    увлекательной езды?</div>
+                                <div class="good-price">12 000 руб</div>
+                                <a href='#buy' class="good-price-by">Заказать</a>
+                            </div>
+                        </div>
+                        <div class="good-x" data-category="giro">
+                            <div class="good-up">
+                                <div class="good-img"
+                                    style="background: url('\img/giro4.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
+                                </div>
+                            </div>
+                            <div class="good-down">
+                                <div class="good-name">smartONE 10.5 TAO-TAO</div>
+                                <div class="good-description">Благодаря идеально подобранному диаметру колёс и
+                                    мощности
+                                    аккумулятора этот гироскутор не едет, а летит</div>
+                                <div class="good-price">15 000 руб</div>
+                                <a href='#buy' class="good-price-by">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.goods-container -->
+                </div>
+                <!-- /.container -->
+            </div>
+
+        </div>
+        <!-- /.goods -->
+
+
+        <div class="brands">
+            <div class="container">
+                <div class="brands-content">
+                    <div class="brands-title">Мы сотрудничаем только с самыми качественными и проверенными
+                        брендами
+                    </div>
+                    <div class="brands-all">
+                        <div class="brand-x">
+                            <img src="img/Logo_smart_balance.png" alt="" class="brand-img">
+                        </div>
+                        <div class="brand-x">
+                            <img src="img/logogo.png" alt="" class="brand-img">
+                        </div>
+                        <div class="brand-x">
+                            <img src="img/j-long.png" alt="" class="brand-img">
+                        </div>
+
+                        <div class="brand-x">
+                            <img src="img/Xiaomi-Logo-1.png" alt="" class="brand-img">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.brands -->
+
+        <div class="consultants">
+            <div class="container">
+                <div class="consultant-content">
+                    <div class="consultant-title">Наши консультанты помогут вам подобрать нужный вам электро
+                        транспорт
+                    </div>
+                    <div class="consultant-all">
+                        <div class="consultant-x">
+                            <div class="consultant-x-up">
+                                <img src="img/baba1.png" alt="" class="consultant-img">
+                                <div class="consultant-name">Мария</div>
+                            </div>
+                            <div class="consultant-x-down">
+                                "Постараюсь ответить на ваши вопросы максимально кратно и полезно"
+                            </div>
+                        </div>
+                        <div class="consultant-x">
+                            <div class="consultant-x-up">
+                                <img src="img/baba2.png" alt="" class="consultant-img">
+                                <div class="consultant-name">Светлана</div>
+                            </div>
+                            <div class="consultant-x-down">
+                                "Я пользуюсь электросамокатами уже 3 года. Кому, как ни мне знать, что лучше
+                                выбрать в
+                                актуальный момент"
+                            </div>
+                        </div>
+                        <div class="consultant-x">
+                            <div class="consultant-x-up">
+                                <img src="img/baba3.png" alt="" class="consultant-img">
+                                <div class="consultant-name">Антон</div>
+                            </div>
+                            <div class="consultant-x-down">
+                                "Нужен подробный список технических характеристик? Я к вашим услугам, с
+                                удовольствием
+                                вам помогу"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="request">
+            <div class="container">
+                <div class="request-content">
+                    <div class="request-title">Вам стоит попробовать</div>
+                    <div class="request-text">Это непередаваемые ощущения. Ты словно паришь по земле.
+                        Передвигаешь
+                        быстро и плавно.Так чего же ты ждешь?</div>
+                </div>
+            </div>
+        </div>
+        <!-- /.request -->
+
+
+        <div class="form" id="buy">
+            <div class="container">
+                <div class="form-title">Подайте заявку и мы перезвоним вам в течение 5 минут</div>
+                <div class="form-title-2">Укажите своё имя и номер. Дальше дело за нами.</div>
+                <form action="#">
+                    <input type="text" placeholder="Имя" class="form-field">
+                    <input type="tel" class="form-field" placeholder="8-000-000-00-00">
+                    <input type="button" class="form-button" value="Отправить заявку">
+                </form>
+            </div>
+        </div>
+
+        <div class="button-up">
+            <a href="#top" class="button-up-b">^</a>
+        </div>
+
+    </div>
+    <!-- /.main -->
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-up">
+                    <div class="footer-some"> Г. Астрахань, Николая Островского 115</div>
+                    <div class="footer-some"> Г. Санкт-Петербург, Ленина 45</div>
+                </div>
+                <div class="footer-some logo-name centr">MyGiro</div>
+                <div class="footer-down">
+                    <a href="#" class="social"><img src="img/VK.png" alt="" class="footer-img"></a>
+                    <a href="#" class="social"><img src="img/inst.png" alt="" class="footer-img"></a>
+                </div>
+
+            </div>
+            <!-- /.footer-content -->
+        </div>
+    </footer>
+</body>
+
+</html>
